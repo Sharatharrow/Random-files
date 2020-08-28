@@ -45,7 +45,7 @@ public class CompareTwoJsons {
         JsonParser jsonParser = new JsonParser();
         JsonElement jsonElement=null;
         try {
-            FileReader fileReader = new FileReader("/Users/sharathgowdaam/IdeaProjects/Try/Random/src/test/java/TechArrow/Jsons/json1_fileName.json");//Json1 filePath
+            FileReader fileReader = new FileReader("json1_fileName.json");//Json1 filePath
             jsonElement = jsonParser.parse(fileReader);
         } catch (Exception e) {
             System.out.println("File not found");
@@ -56,7 +56,7 @@ public class CompareTwoJsons {
         JsonParser jsonParser = new JsonParser();
         JsonElement jsonElement=null;
         try {
-            FileReader fileReader = new FileReader("/Users/sharathgowdaam/IdeaProjects/Try/Random/src/test/java/TechArrow/Jsons/json2_fileName.json");//Json2 filePath
+            FileReader fileReader = new FileReader("json2_fileName.json");//Json2 filePath
             jsonElement = jsonParser.parse(fileReader);
         } catch (Exception e) {
             System.out.println("File not found");
